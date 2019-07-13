@@ -1,0 +1,11 @@
+{
+  "temperature_range":
+  {
+    "min_temp": 0.0,
+    "max_temp": 100.0
+  },
+  "durations":
+  {
+    "logging_interval": 120
+  }
+}

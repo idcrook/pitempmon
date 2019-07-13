@@ -1,0 +1,26 @@
+# # -*- systemd -*-
+# - uses virtualenv python version
+# cd /home/pi/projects/pitempmon/etc
+# sudo cp -v pitempmon.service  /lib/systemd/system/pitempmon@.service
+# sudo chmod 644 /lib/systemd/system/pitempmon@.service
+# sudo systemctl daemon-reload
+# sudo systemctl enable pitempmon@pi.service
+# sudo systemctl status pitempmon@pi.service
+# sudo systemctl start  pitempmon@pi.service
+# journalctl -u pitempmon@pi.service
+
+[Unit]
+Description=Temperature Logger for Raspberry Pi CPU
+Documentation=https://github.com/idcrook/pitempmon
+After=network.target time-sync.target
+ConditionPathExists=/home/pi/projects/pitempmon/etc
+
+[Service]
+Type=simple
+WorkingDirectory=/home/pi/projects/pitempmon
+ExecStart=/home/pi/projects/pitempmon/env/bin/python \
+          /home/pi/projects/pitempmon/pitemplog.py
+User=pi
+
+[Install]
+WantedBy=default.target

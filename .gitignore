@@ -1,0 +1,4 @@
+!*.example.json
+*.secrets.json
+/env/
+README.html
