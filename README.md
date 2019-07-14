@@ -40,7 +40,9 @@ cp phant-config.example.json phant-config.secrets.json
 source env/bin/activate
 which python
 # should be one in ./env/bin/python
-python
+
+# now can run
+python ./pitemplog.py
 ```
 
 inspired by
@@ -59,8 +61,3 @@ git add python3-phant
 # on fresh clones
 git submodule update --init --recursive
 ```
-
-example data url
-----------------
-
--	https://data.crookster.org/rpif1_cpu_temp
