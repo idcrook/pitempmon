@@ -28,7 +28,9 @@ pip install -e .
 
 ### systemd service
 
-There is
+There is an example `systemd` service file: [etc/pitempmon.service](etc/pitempmon.service)
+
+See comments in the file's header for instructions on how to install. You can have the script automatically run at bootup.
 
 configure
 ---------

@@ -12,7 +12,7 @@
 [Unit]
 Description=Temperature Logger for Raspberry Pi CPU
 Documentation=https://github.com/idcrook/pitempmon
-After=network.target time-sync.target
+After=network.target time-sync.target nss-lookup.target
 ConditionPathExists=/home/pi/projects/pitempmon/etc
 
 [Service]
