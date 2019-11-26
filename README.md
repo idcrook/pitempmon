@@ -3,6 +3,8 @@ pitempmon
 
 Log Raspberry Pi CPU temperatures (to phant)
 
+If it is up, see a [live chart of temperature log](https://idcrook.github.io/timetemp/chart/pitemp-hourly/)
+
 install
 -------
 
