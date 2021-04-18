@@ -1,4 +1,4 @@
 [submodule "python3-phant"]
 	path = python3-phant
 	url = https://github.com/idcrook/python3-phant.git
-	branch = master
+	branch = main

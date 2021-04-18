@@ -60,7 +60,7 @@ repo initialization
 -------------------
 
 ```
-git submodule add -b master https://github.com/idcrook/python3-phant.git
+git submodule add -b main https://github.com/idcrook/python3-phant.git
 git add python3-phant
 
 # on fresh clones
